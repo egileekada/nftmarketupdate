@@ -96,16 +96,19 @@
         </ul>
         </li>
         <li class="nav-item">
-        <a href="#" class="nav-link">
+        <a href="#" class="nav-link active">
             Create Nft
         <i class="ri-add-line"></i>
         </a>
         <ul class="dropdown-menu">
         <li class="nav-item">
-        <a href="create-collection.html" class="nav-link active ">Create Collection</a>
+        <a href="create-collection.html" class="nav-link">Create Collection</a>
         </li>
         <li class="nav-item">
-        <a href="create-item.html" class="nav-link">Create Item</a>
+        <a href="create-item.html" class="nav-link active">Create Item</a>
+        </li>
+        <li class="nav-item">
+        <a href="my-nft.html" class="nav-link">My Nft</a>
         </li>
         <li class="nav-item"> 
         </li> 
@@ -157,10 +160,10 @@
 <div class="overlay bg-black op-7"></div>
 <div class="container">
 <div class="breadcrumb-title">
-<h2>Create Collection</h2>
+<h2>Create</h2>
 <ul class="breadcrumb-menu list-style">
-<li><a href="index.html">Home </a></li>
-<li>Create Collection</li>
+<!-- <li><a href="index.html">Home </a></li> -->
+<li>Create a new item for your collection</li>
 </ul>
 </div>
 </div>
@@ -234,25 +237,25 @@
 <div class="col-12">
 <div class="form-group">
 <label for="title">Title</label>
-<input type="text" name="title" id="title" placeholder="Flame dress By Balmain">
+<input type="text" name="title" id="title" placeholder="Item name">
 </div>
 </div>
 <div class="col-12">
  <div class="form-group">
-<label for="item_desc">Description</label>
-<textarea name="item_desc" id="item_desc" cols="30" rows="10" placeholder="Write Short Description"></textarea>
+<label for="item_desc">External link</label>
+<textarea name="item_desc" id="item_desc" cols="30" rows="10" placeholder="External link"></textarea>
 </div>
 </div>
 <div class="col-lg-6">
 <div class="form-group">
-<label for="price">Price</label>
-<input type="text" name="price" id="price" placeholder="1.356 SOL">
+<label for="price">Description</label>
+<input type="text" name="price" id="price" placeholder="Description">
 </div>
 </div>
 <div class="col-lg-6 col-12">
 <div class="form-group">
-<label for="category">Category</label>
-<select name="category" id="category">
+<label for="category">Collection</label>
+<select name="category" id="category" placeholder="placeholder" >
 <option value="1">Art</option>
 <option value="2">Music</option>
 <option value="3">Collectibles</option>
@@ -261,56 +264,36 @@
 </div>
 <div class="col-lg-6 col-12">
 <div class="form-group">
-<label for="start_date">Starting Date</label>
-<input type="date">
-</div>
-</div>
-<div class="col-lg-6 col-12">
-<div class="form-group">
-<label for="end_date">Ending Date</label>
-<input type="date">
-</div>
-</div>
-<div class="col-lg-4 col-12">
-<div class="form-group">
-<label for="royalty">Royality</label>
-<input type="number" name="royalty" id="royalty" placeholder="5%">
-</div>
-</div>
-<div class="col-lg-4 col-12">
-<div class="form-group">
-<label for="no_copies">No of Copies</label>
-<input type="number" name="no_copies" id="no_copies" placeholder="13">
-</div>
-</div>
-<div class="col-lg-4 col-12">
-<div class="form-group">
-<label for="size">Size</label>
-<input type="number" name="size" id="size" placeholder="25">
-</div>
-</div>
-<div class="col-lg-4">
-<div class="form-group">
-<label for="price">Charity</label>
-<input type="text" name="price" id="price" placeholder="Charity">
-</div>
-</div>
-<div class="col-lg-4 col-12">
-<div class="form-group">
-<label for="category">Charity Category</label>
-<select name="category" id="category">
+<label for="start_date">Properties</label>
+<select name="category" id="category" placeholder="Type" >
 <option value="1">Art</option>
 <option value="2">Music</option>
 <option value="3">Collectibles</option>
 </select>
 </div>
-</div>
-<div class="col-lg-4">
+</div>  
+<div class="col-12">
 <div class="form-group">
-<label for="price">Charity Percentage</label>
-<input type="number" id="price" placeholder="5%">
+<label for="title">Explicit content *</label>
+<input type="text" name="title" id="title" placeholder="Item name">
 </div>
 </div>
+<div class="col-12">
+ <div class="form-group">
+<label for="item_desc">Supply *</label>
+<textarea name="item_desc" id="item_desc" cols="30" rows="10" placeholder="External link"></textarea>
+</div>
+</div>  
+<div class="col-12">
+ <div class="form-group">
+<label for="item_desc">Blockchain *</label>
+<select name="category" id="category" >
+<option value="1">Solana</option>
+<option value="2">Music</option>
+<option value="3">Collectibles</option>
+</select>
+</div>
+</div>  
 </div>
 <div class="row align-items-center">
 <div class="col-md-6 col-sm-7">
