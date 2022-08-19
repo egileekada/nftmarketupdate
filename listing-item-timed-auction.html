@@ -102,10 +102,13 @@
         </a>
         <ul class="dropdown-menu">
         <li class="nav-item">
-        <a href="create-collection.html" class="nav-link active ">Create Collection</a>
+        <a href="create-collection.html" class="nav-link">Create Collection</a>
         </li>
         <li class="nav-item">
-        <a href="create-item.html" class="nav-link">Create Item</a>
+        <a href="create-item.html" class="nav-link active">Create Item</a>
+        </li>
+        <li class="nav-item">
+        <a href="my-nft.html" class="nav-link">My Nft</a>
         </li>
         <li class="nav-item"> 
         </li> 
@@ -157,10 +160,10 @@
 <div class="overlay bg-black op-7"></div>
 <div class="container">
 <div class="breadcrumb-title">
-<h2>Create Collection</h2>
+<h2>My Nft</h2>
 <ul class="breadcrumb-menu list-style">
-<li><a href="index.html">Home </a></li>
-<li>Create Collection</li>
+<!-- <li><a href="index.html">Home </a></li> -->
+<!-- <li>Create a new item for your collection</li> -->
 </ul>
 </div>
 </div>
@@ -203,103 +206,107 @@
 <div class="col-lg-8">
 <form action="#" class="create-collection-form">
 <div class="content-title">
-<h3>Create New NFT</h3>
+<h3>List item for sale</h3>
 </div>
 <div class="row">
-<div class="col-12">
-<div class="form-group ">
-<p>Logo Image</p>
-<div class="upload-btn">
-<button type="button">Upload a file</button>
-<input type="file" name="myfile" />
-</div>
-</div>
-</div>
-<div class="col-12">
-<div class="form-group ">
-<p>Feature Image</p>
-<div class="upload-btn">
-<button type="button">Upload a file</button>
-<input type="file" name="myfile" />
-</div>
-</div>
-</div>
-<div class="col-12">
-<div class="form-group ">
-<p>Cover Image</p>
-<div class="upload-btn">
-<button type="button">Upload a file</button>
-<input type="file" name="myfile" />
-</div>
-</div>
-</div> 
+    <div class="col-12">
+    <div class="form-group ">
+    <p>Type</p> 
+    </div>
+    
+    <div class="col-12" style=" margin-bottom:40px ">
+        <div class="radio-btn"> 
+            <!-- <div class="col-6 flex-fill align-items-center justify-content-center" style="background:paleturquoise; height: 60px; display:flex; align-items:center; padding-top:10px   " >
+                <a href="listing-item-fixed-price.html" >Fixed Price</a>
+            </div> -->
+            <a href="listing-item-fixed-price.html" class="col-6 flex-fill align-items-center justify-content-center" style="background:white; height: 60px; display:flex; color:#000;padding-top:15px   " >
+                <p style=" color:#000" >Fixed Price</p>
+            </a> 
+            <a href="listing-item-timed-auction.html" class="col-6 flex-fill align-items-center justify-content-center" style="background:paleturquoise; height: 60px; display:flex; color:#000;padding-top:15px  " >
+                <p style=" color:#000" >Timed Auction</p>
+            </a> 
+        </div>
+        </div>
+    </div>
 <div class="col-12">
 <div class="form-group">
-<label for="title">Name</label>
-<input type="text" name="title" id="title" placeholder="Flame dress By Balmain">
-</div>
-</div>
-<div class="col-12">
- <div class="form-group">
-<label for="item_desc">Url</label>
-<textarea name="item_desc" id="item_desc" cols="30" rows="10" placeholder="Write Short Description"></textarea>
-</div>
-</div>
-<div class="col-12">
- <div class="form-group">
-<label for="item_desc">Description</label>
-<textarea name="item_desc" id="item_desc" cols="30" rows="10" placeholder="Write Short Description"></textarea>
-</div>
-</div> 
-<div class="col-12">
-<div class="form-group">
-<label for="category">Category</label>
+<label for="category">Method</label>
 <select name="category" id="category">
+    <option value="1">Set To Highest Bidder</option>
 <option value="1">Art</option>
 <option value="2">Music</option>
 <option value="3">Collectibles</option>
 </select>
+</div>
+</div> 
+<div class="col-12">
+<div class="form-group">
+<label for="title">Coin</label>
+<input type="text" name="title" id="title" placeholder="SOL">
+</div>
+</div>
+<div class="col-12">
+ <div class="form-group">
+<label for="item_desc">Amount</label>
+<textarea name="item_desc" id="item_desc" cols="30" rows="10" placeholder="150 SOL"></textarea>
 </div>
 </div>  
 <div class="col-12">
 <div class="form-group">
-<label for="royalty">Royality</label>
-<input type="number" name="royalty" id="royalty" placeholder="5%">
+<label for="title">Duration</label>
+<input type="text" name="title" id="title" placeholder="Item name">
+</div>
+</div>   
+<div class="col-12">
+<div class="radio-btn">
+<div style=" display:flex; align-items:center " >
+<input style=" width: 15px " type="checkbox">
+<label  style=" margin-left: 5px " for="test1">Include Reserved Price</label>
+</div> 
+</div>
+</div>
+<div class="col-12">
+<div class="form-group">
+<!-- <label for="title">Duration</label> -->
+<input type="number" name="title" id="title" placeholder="Amount">
+</div>
+</div>  
+<div class="col-12">
+<div class="radio-btn">
+<div style=" display:flex; align-items:center " >
+<input style=" width: 15px " type="checkbox">
+<label  style=" margin-left: 5px " for="test1">Sell as a bundle</label>
+</div> 
+</div>
+</div>
+<div style="margin-top: 5px" class="col-12">
+<div class="radio-btn">
+<div style=" display:flex; align-items:center " >
+<input style=" width: 15px " type="checkbox">
+<label  style=" margin-left: 5px " for="test1">Reserve for specific buyer</label>
+</div> 
 </div>
 </div> 
 <div class="col-12">
-<div class="form-group">
-<label for="category">Charity Organisation</label>
-<select name="category" id="category">
-    <option value="1">Min 10%</option>
-<option value="1">Art</option>
-<option value="2">Music</option>
-<option value="3">Collectibles</option>
-</select>
+    <label style=" font-size: 18px; color: #000; margin-top: 10px  ">Fees</label>
+ <div style=" width: 100%; display:flex; align-items:center; margin-top: 5px " >  
+    <p >Service Fee:</p>
+    <p style="margin-left: auto;" >2.5%</p>
 </div>
-</div> 
-<div class="col-12">
-<div class="form-group">
-<label for="royalty">Blockchain</label>
-<input type="number" name="royalty" id="royalty" placeholder="5%">
+<div style=" width: 100%; display:flex; align-items:center; margin-top: -17px;  margin-bottom: 10px  " >  
+   <p >Creator Fee:</p>
+   <p style="margin-left: auto;" >4%</p>
 </div>
-</div> 
-<!-- <div class="col-12">
-<div class="form-group">
-<label for="royalty">Explicit content</label>
-<input type="number" name="royalty" id="royalty" placeholder="5%">
-</div>
-</div>  -->
+</div>  
 <div class="row align-items-center">
-<div class="col-12">
-    <label for="royalty">Explicit content</label>
+<!-- <div class="col-md-6 col-sm-7">
 <div class="checkbox">
 <input type="checkbox" id="test_1">
-<label for="test_1">Mark this collection as explicit or adult or sensitive content</label>
+<label for="test_1">I agree to all <a href="terms-of-service.html" class="link style1">terms & conditions</a>.</label>
 </div>
-</div>
-<div style="margin-top: 50px;" class="col-12 text-sm-end">
-<button type="submit" class="btn style1">Create</button>
+</div> -->
+<div class="col-md-6 col-sm-5 ">
+<button type="submit" class="btn style1">Apply For Listing</button>
 </div>
 </div>
 </form>
