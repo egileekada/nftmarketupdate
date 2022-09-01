@@ -52,6 +52,34 @@ button:focus,
   box-shadow: none;
 }
 
+.hovertext {
+  position: relative;
+  background-color: #fff; 
+}
+
+.hovertext:before {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0; 
+  color: black;
+  text-align: center;
+  width: 140px;
+  border-radius: 5px;
+  padding: 5px 0;
+  transition: opacity 1s ease-in-out;
+
+  position: absolute;
+  z-index: 50;
+  /* left: 0; */
+  right: -130px;
+  top: 5px;
+}
+
+.hovertext:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
+
 a,
 button,
 input[type="submit"] {
