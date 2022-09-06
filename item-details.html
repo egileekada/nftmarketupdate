@@ -254,7 +254,7 @@
     <div style="margin-left: auto; display:flex ; flex-direction: row; justify-content:center" >   
         <a href="watchlist.html" title="pin icons"><img src="assets/img/pin.png" class=" w-7 mt-2 mr-10  " /></a>
         <a><i style="font-size: 30px;" class="ri-share-fill"></i></a> 
-        <a data-bs-toggle="modal" data-bs-target="#placeBid"><i style="font-size: 30px; margin-left: 17px;" class="ri-error-warning-fill"></i></a> 
+        <a data-bs-toggle="modal" data-bs-target="#report"><i style="font-size: 30px; margin-left: 17px;" class="ri-error-warning-fill"></i></a> 
     </div>
 </div>
 </div>
@@ -266,7 +266,6 @@
 <p>Price</p>
 <div class="bid-btn">
 <span>1.7 SOL</span>
-<!-- <button type="button" class="btn style1" data-bs-toggle="modal" data-bs-target="#placeBid">Place Bid</button> -->
 <a><i style="font-size: 30px; margin-left: 12px;" class="ri-lock-2-line"></i></a> 
 <a class="hovertext" data-hover="Unlockable Item"  ><i style="font-size: 30px; margin-left: 18px;"  class="ri-information-line"></i></a> 
 </div>
@@ -275,7 +274,8 @@
 <!-- <p>Floor Price</p> -->
 <div class="bid-btn">
 <!-- <span>1.7 SOL</span> --> 
-<button type="button" class="btn style1" style="margin-left: 12px;"  >Place Bid</button> 
+<button type="button" class="btn style1" data-bs-toggle="modal" data-bs-target="#placeBid">Place Bid</button>
+<!-- <button type="button"  data-bs-toggle="modal" data-bs-target="#report" class="btn style1" style="margin-left: 12px;"  >Place Bid</button>  -->
 </div>
 </div>
 </div>
@@ -832,9 +832,9 @@
     </div>
     
 
-<div class="modal fade" id="placeBid" tabindex="-1" aria-labelledby="placeBid" aria-hidden="true">
+<div class="modal fade" id="report" tabindex="-1" aria-labelledby="report" aria-hidden="true">
 <div class="modal-dialog modal-dialog-right">
-<div class="modal-content">
+<div  style="background-color: #2d234f ; " class="modal-content">
 <button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close"><i class="ri-close-line"></i></button>
 <div class="modal-body">
 <div class="bidding-popup">
@@ -842,12 +842,12 @@
 <h6>I think this item is...</h6>
 <form action="#" class="bidding-form">
 <div class="form-group">
-<select  style="background-color:#2c194f; height: 50px; width: 100%; border-radius: 6px; padding-left: 20px; color: white; " placeholder="select a reason" placeholder="select a reason">
-    <option>select a reason</option>
-    <option>fake collection and possible a spam</option>
-    <option>Explicit and sensitive content</option>
-    <option>Spam</option>
-    <option>Others</option>
+<select  style="background-color:rgba(255, 255, 255, 0.09); height: 50px; width: 100%; border-radius: 6px; padding-left: 20px; color: white; " placeholder="select a reason" placeholder="select a reason">
+    <option style="color: black;" >select a reason</option>
+    <option style="color: black;">fake collection and possible a spam</option>
+    <option style="color: black;">Explicit and sensitive content</option>
+    <option style="color: black;">Spam</option>
+    <option style="color: black;">Others</option>
 </select>
 </div> 
 </form> 

@@ -6153,6 +6153,131 @@ select {
 }
 
 /*-------------------------------
+         Report CSS
+-------------------------------*/
+#report .modal-content {
+  background-color: #0F193D;
+}
+
+#report .modal-content .modal-close {
+  position: absolute;
+  top: 10px;
+  right: 7px;
+  background-color: transparent;
+  border: none;
+  z-index: 9;
+}
+
+#report .modal-content .modal-close i {
+  color: #fff;
+  font-size: 25px;
+  line-height: 1;
+}
+
+#report .modal-body {
+  padding: 40px 35px 40px;
+  position: relative;
+}
+
+#report .modal-body .bidding-popup h2 {
+  font-size: 30px;
+  line-height: 1;
+  margin: 0 0 10px;
+  color: #fff;
+  text-align: center;
+}
+
+#report .modal-body .bidding-popup h6 {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  margin: 0;
+  font-weight: 400;
+}
+
+#report .modal-body .bidding-popup h6 span {
+  font-weight: 600;
+  color: #fff;
+}
+
+#report .modal-body .bidding-popup .bidding-form {
+  margin-top: 35px;
+}
+
+#report .modal-body .bidding-popup .bidding-form .form-group {
+  margin-bottom: 25px;
+}
+
+#report .modal-body .bidding-popup .bidding-form .form-group input select {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.09);
+  padding: 15px 20px;
+  border: none;
+  color: #fff;
+}
+
+#report .modal-body .bidding-popup .bidding-form .form-group input::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 0.8;
+} 
+#report .modal-body .bidding-popup .bidding-form .form-group input::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+
+#report .modal-body .bidding-popup .bidding-form .form-group input:-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+
+#report .modal-body .bidding-popup .bidding-form .form-group input::-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+
+#report .modal-body .bidding-popup .bidding-form .form-group input::placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+
+#report .modal-body .bidding-popup .bidding-form .form-group p {
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0 0 12px;
+}
+
+#report .modal-body .bidding-popup .bidding-form .form-group p span {
+  color: #fff;
+  font-weight: 500;
+}
+
+#report .modal-body .bidding-popup .bidding-tablelist {
+  margin-bottom: 30px;
+}
+
+#report .modal-body .bidding-popup .bidding-tablelist li {
+  margin: 0 0 12px;
+}
+
+#report .modal-body .bidding-popup .bidding-tablelist li p {
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+  width: 60%;
+}
+
+#report .modal-body .bidding-popup .bidding-tablelist li span {
+  color: #fff;
+  font-weight: 600;
+  width: 40%;
+  text-align: right;
+}
+
+#report .modal-body .bidding-popup button.style1 {
+  width: 100%;
+  display: block;
+}
+
+/*-------------------------------
     Blog Details CSS
 --------------------------------*/
 .post-cat-title {
